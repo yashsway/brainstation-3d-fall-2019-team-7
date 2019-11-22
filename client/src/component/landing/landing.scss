@@ -3,7 +3,7 @@
 .landing {
   margin-top: 15px;
   height: 100vh;
-  border: 1px solid black;
+  // border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,18 +18,21 @@
   }
 
   &__left {
-    border: 1px solid black;
+    // border: 1px solid black;
     width: 50%;
     overflow: scroll;
   }
 
-  &__right{
-    border: 1px solid black;
+  &__right {
+    // border: 1px solid black;
+    position: relative;
+    right: 600px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 20%;
   }
 
   &__img {
@@ -40,4 +43,28 @@
     position: absolute;
     bottom: 35px;
   }
+
+  &__h1 {
+    width: 325px;
+    height: 57px;
+    font-size: 48px;
+    color: #000000;
+  }
+
+  .option {
+    position: relative;
+    top: 400px;
+  }
+  // &__p {
+  //   width: 585px;
+  //   height: 424px;
+  // }
+}
+
+.image {
+  position: relative;
+  left: 200px;
+  bottom: 550px;
+  width: 515px;
+  height: 318px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import arrow from "../../assets/Icon/chevron-down-solid.svg";
 import "./landing.scss";
 import Button from "../Button";
+import image from "../../assets/Logo/image.png";
 
 export default class Landing extends React.Component {
   render() {
@@ -9,17 +10,18 @@ export default class Landing extends React.Component {
       <seciton className="landing" id="landing">
         <div className="landing__flex">
           <div className="landing__left">
-            <h1 className="landing__h1">header</h1>
-            <p className="landing__p">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h1 className="landing__h1">No Mo’ FOMO</h1>
+            <div className="landing__p">
+              <p>
+                “Have you seen the Ted Talk about…?” - get used to hearing this
+                once you start working. No matter what stage you’re at in your
+                career, Ted Talks allows you to filter from high level to
+                specific topics, providing inspiration or, insightful tools to
+                fuel your success.
+              </p>
+            </div>
           </div>
+
           <div className="landing__right">
             <Button text="something" class="button4" />
             <Button text="something" class="button5" />
@@ -27,6 +29,7 @@ export default class Landing extends React.Component {
           </div>
         </div>
         <img className="landing__down" src={arrow} alt="scroll down" />
+        <img className="image" src={image} alt="" />
       </seciton>
     );
   }
