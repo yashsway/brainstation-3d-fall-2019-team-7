@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import chart from "../../assets/Logo/chart.png";
+import video1 from "../../assets/Logo/video1.png";
+import video2 from "../../assets/Logo/video2.png";
+import video3 from "../../assets/Logo/video3.png";
 import "./styles.scss";
 
 export default class Carousel extends Component {
@@ -15,38 +19,24 @@ export default class Carousel extends Component {
     };
     return (
       <div className="slider">
-        <h2 className="heading">TOPIC</h2>
+        <h2 className="heading">TECHNOLOGY</h2>
+        <img className="chart" src={chart} alt="" />
         <div className="topic">
-          <p className="topic-info">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
           <img />
         </div>
         <div className="information"></div>
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            {" "}
+            <img className="video" src={video1} alt="" />
           </div>
           <div>
-            <h3>2</h3>
+            {" "}
+            <img className="video" src={video2} alt="" />
           </div>
           <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
+            {" "}
+            <img className="video" src={video3} alt="" />
           </div>
         </Slider>
       </div>

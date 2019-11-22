@@ -1,9 +1,9 @@
 // @import '../styles/base.scss';
 
-
 .tag {
   margin-top: 15px;
   height: 100vh;
+  width: 100vw;
   border: 1px solid black;
   display: flex;
   flex-direction: column;
@@ -18,12 +18,16 @@
   &__h2 {
     font-family: bold;
     text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 48px;
   }
   &__p {
     width: 100%;
+    font-size: 36px;
+    line-height: 42px;
   }
 
-  &__buttonAll{
+  &__buttonAll {
     margin-top: 30px;
   }
 
@@ -32,4 +36,17 @@
     position: absolute;
     bottom: 35px;
   }
+
+  &__top {
+    margin-bottom: 10px;
+  }
+}
+
+.bstn {
+  transition: transform 0.2s;
+}
+.bstn:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
 }
