@@ -1,0 +1,28 @@
+// @import '../styles/base.scss';
+
+
+.tag {
+  margin-top: 15px;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__h2 {
+    font-family: bold;
+    text-transform: uppercase;
+  }
+
+  &__buttonAll{
+    margin-top: 30px;
+  }
+
+  &__down {
+    height: 30px;
+    position: absolute;
+    bottom: 35px;
+  }
+}

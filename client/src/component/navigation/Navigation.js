@@ -33,12 +33,20 @@ const Navigation = props => {
           <NavLinks className="navlink" style={linkAnimation}>
             <Link
               activeClass="active"
-              to="id" // the element???
+              to="landing" // the element???
               spy={true} // make Link selected when scroll is at its targets position
               smooth={true}
               offset={-70} // scroll additional px (like padding)
               duration= {500} //  time of the scroll animation, can be a number or a function 
-            />
+            >asdfasdfsa</Link>
+            <Link
+              activeClass="active"
+              to="tag" // the element???
+              spy={true} // make Link selected when scroll is at its targets position
+              smooth={true}
+              offset={-70} // scroll additional px (like padding)
+              duration= {500} //  time of the scroll animation, can be a number or a function 
+            >asdfas</Link>
             <a href="/carousel">Recommended</a>
           </NavLinks>
           {/* <div>
