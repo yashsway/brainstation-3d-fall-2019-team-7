@@ -1,0 +1,44 @@
+@import "../../styles/base.scss";
+
+.nav-container {
+  max-width: 120rem;
+  display: flex;
+  margin: auto;
+  padding: 0 2rem;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navlink {
+  position: relative;
+
+  @include phone() {
+    font-size: $font-size-large;
+    color: white;
+    position: relative;
+    top: 16px;
+    right: 165px;
+    bottom: 16px;
+  }
+
+  @include tablet() {
+    margin-left: 30px;
+  }
+
+  @include desktop() {
+    margin-left: 30px;
+  }
+}
+
+.burgerwrapper {
+  margin: auto 0;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.navlink a:hover::after {
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+}
