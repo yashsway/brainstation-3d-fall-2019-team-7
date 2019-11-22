@@ -38,33 +38,41 @@ const Navigation = props => {
       <NavBar style={barAnimation}>
         <div className="nav-container">
           <Brand />
-
           <NavLinks className="navlink" style={linkAnimation}>
-            <a>
-              <span className="navtitle">WATCH</span>
-            </a>
-            <a>
-              <span className="navtitle">DISCOVER</span>
-            </a>
-            <a>
-              <span className="navtitle">ATTEND</span>
-            </a>
-            <a>
-              <span className="navtitle">PARTICIPATE</span>
-            </a>
-            <a>
-              <span className="navtitle">ABOUT</span>
-            </a>
             <img className="searchicon" src={icon} alt="" />
             <Link
+              className="navtitle"
               activeClass="active"
-              to="id" // the element???
+              to="landing" // the element???
               spy={true} // make Link selected when scroll is at its targets position
               smooth={true}
               offset={-70} // scroll additional px (like padding)
               duration={500} //  time of the scroll animation, can be a number or a function
-            />
-            <a href="/carousel">Recommended</a>
+            >
+              HOME
+            </Link>
+            <Link
+              className="navtitle"
+              activeClass="active"
+              to="tag" // the element???
+              spy={true} // make Link selected when scroll is at its targets position
+              smooth={true}
+              offset={-70} // scroll additional px (like padding)
+              duration={500} //  time of the scroll animation, can be a number or a function
+            >
+              EXPLORE
+            </Link>
+            <Link
+              className="navtitle"
+              activeClass="active"
+              to="tag" // the element???
+              spy={true} // make Link selected when scroll is at its targets position
+              smooth={true}
+              offset={-70} // scroll additional px (like padding)
+              duration={500} //  time of the scroll animation, can be a number or a function
+            >
+              TECHNOLOGY
+            </Link>
           </NavLinks>
           {/* <div>
             <BurgerMenu

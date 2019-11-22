@@ -10,6 +10,8 @@ import Tabx from "./component/Tab";
 import Chart from "./component/Chart";
 import Navigation from "./component/navigation/Navigation";
 import Carousel from "./component/carousel/Carousel";
+import Landing from "./component/landing/Landing";
+import Tag from "./component/tag/Tag";
 // npm run start:client
 
 export default class App extends React.Component {
@@ -22,24 +24,17 @@ export default class App extends React.Component {
         <Helmet>
           <title>TED GRADS</title>
         </Helmet>
-
         <Navigation />
-        <BrowserRouter>
+        <Landing />
+        <Tag />
+        <Carousel />
+        {/* <BrowserRouter>
           <Switch>
-            {/* <Route path="/" exact component="#"/> */}
-            <Route path="/carousel" exact component={Carousel} />
+            <Route path="/technology" exact component={Carousel} />
             <Route path="/tag" exact component={Tag} />
             <Route path="/" exact component={Landing} />
           </Switch>
-        </BrowserRouter>
-        {/* <header className="App-header">
-          <Tabx />
-          <h2>Brainstation 3D Starter - Team 5_minute_ramen</h2>
-          <Chart />
-          <Card />
-          <Input />
-          <Button />
-        </header> */}
+        </BrowserRouter> */}
       </div>
     );
   }

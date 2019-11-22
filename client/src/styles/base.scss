@@ -34,18 +34,18 @@ $white: #ffffff;
   }
 }
 
-// @font-face {
-//   font-family: "medium";
-//   src: url(../assets/_Global-Font/AvenirNextProLT/medium.otf);
-// }
-// @font-face {
-//   font-family: "thin";
-//   src: url(../assets/_Global-Font/AvenirNextProLT/thin.otf);
-// }
-// @font-face {
-//   font-family: "heavy";
-//   src: url(../assets/_Global-Font/AvenirNextProLT/heavy.otf);
-// }
+@font-face {
+  font-family: "bold";
+  src: url(../assets/global-fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: "demi";
+  src: url(../assets/global-fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Demi.otf);
+}
+@font-face {
+  font-family: "regular";
+  src: url(../assets/global-fonts/AvenirNextProLT/Linotype-AvenirNextLTPro-Regular.otf);
+}
 // @font-face {
 //   font-family: "bold";
 //   src: url(../assets/_Global-Font/AvenirNextProLT/bold.otf);
