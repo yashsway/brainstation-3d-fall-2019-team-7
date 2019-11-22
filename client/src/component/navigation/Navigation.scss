@@ -3,8 +3,7 @@
 .nav-container {
   max-width: 120rem;
   display: flex;
-  margin: auto;
-  padding: 0 2rem;
+    padding: 0 2rem;
   justify-content: space-between;
   height: 80px;
   background-color: white;
@@ -15,27 +14,10 @@
   width: 30px;
   height: 30px;
 }
-.navlink {
+.nav-container > .navlink {
   position: relative;
   display: flex;
 
-
-  @include phone() {
-    font-size: $font-size-large;
-    color: white;
-    position: relative;
-    top: 16px;
-    right: 165px;
-    bottom: 16px;
-  }
-
-  @include tablet() {
-    margin-left: 30px;
-  }
-
-  @include desktop() {
-    margin-left: 30px;
-  }
 }
 
 .burgerwrapper {

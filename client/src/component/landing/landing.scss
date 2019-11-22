@@ -3,7 +3,6 @@
 .landing {
   margin-top: 15px;
   height: 100vh;
-  // border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,7 @@
 
   &__flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 75%;
     height: 60%;
   }
@@ -25,8 +24,8 @@
 
   &__right {
     // border: 1px solid black;
-    position: relative;
-    right: 600px;
+    // position: relative;
+    // right: 600px;
 
     display: flex;
     flex-direction: column;
@@ -36,7 +35,7 @@
   }
 
   &__img {
-    width: 100%;
+    width: 200%;
   }
   &__down {
     height: 30px;
@@ -55,16 +54,14 @@
     position: relative;
     top: 400px;
   }
-  // &__p {
-  //   width: 585px;
-  //   height: 424px;
-  // }
-}
-
-.image {
-  position: relative;
-  left: 200px;
-  bottom: 550px;
-  width: 515px;
-  height: 318px;
+  &__stage {
+    font-family: bold;
+    font-size: 30px;
+  }
+  &__buttonAll {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+  }
 }
