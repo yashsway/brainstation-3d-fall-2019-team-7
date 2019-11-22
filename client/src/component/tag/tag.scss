@@ -10,10 +10,17 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background: #f3f1f1;
 
+  &__container {
+    width: 75%;
+  }
   &__h2 {
     font-family: bold;
     text-transform: uppercase;
+  }
+  &__p {
+    width: 100%;
   }
 
   &__buttonAll{
