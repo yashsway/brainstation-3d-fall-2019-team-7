@@ -6,6 +6,9 @@ import Card from './component/Card';
 import Input from './component/Input';
 import Button from './component/Button';
 import Tabx from './component/Tab';
+import Chart from './component/Chart';
+
+// npm run start:client
 
 export default class App extends React.Component {
   render() {
@@ -22,6 +25,7 @@ export default class App extends React.Component {
         <header className="App-header">
         <Tabx /> 
           <h2>Brainstation 3D Starter - Team 5_minute_ramen</h2>
+          <Chart />
           <Card />
           <Input />
           <Button />
