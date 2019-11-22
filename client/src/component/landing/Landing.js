@@ -1,5 +1,5 @@
 import React from "react";
-import arrow from "../../assets/Icon/chevron-down-solid.svg";
+// import arrow from "../../assets/Icon/chevron-down-solid.svg";
 // "../../assets/Icon/chevron-down-solid.svg"
 import "./landing.scss";
 import Button from "../Button";
@@ -28,7 +28,7 @@ export default class Landing extends React.Component {
             <Button text="something" class=" bstn button6" />
           </div>
         </div>
-        <img className="landing__down" src={arrow} alt="scroll down" />
+        {/* <img className="landing__down" src={arrow} alt="scroll down" /> */}
         <img className="image" src={image} alt="" />
       </seciton>
     );
