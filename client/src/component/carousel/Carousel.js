@@ -18,7 +18,7 @@ export default class Carousel extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="slider">
+      <div className="slider" id="tech">
         <h2 className="heading">TECHNOLOGY</h2>
         <img className="chart" src={chart} alt="" />
         <div className="topic">

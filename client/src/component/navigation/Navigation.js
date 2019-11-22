@@ -65,7 +65,7 @@ const Navigation = props => {
             <Link
               className="navtitle"
               activeClass="active"
-              to="tag" // the element???
+              to="tech" // the element???
               spy={true} // make Link selected when scroll is at its targets position
               smooth={true}
               offset={-70} // scroll additional px (like padding)
