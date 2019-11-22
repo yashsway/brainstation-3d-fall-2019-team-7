@@ -7,6 +7,7 @@ import Input from './component/Input';
 import Button from './component/Button';
 import Tabx from './component/Tab';
 import Chart from './component/Chart';
+import Search from './component/Search';
 
 // npm run start:client
 
@@ -22,6 +23,7 @@ export default class App extends React.Component {
           <title>Your App Title Here</title>
         </Helmet>
         <Burger /> 
+        <Search />
         <header className="App-header">
         <Tabx /> 
           <h2>Brainstation 3D Starter - Team 5_minute_ramen</h2>
