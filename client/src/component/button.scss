@@ -1,64 +1,43 @@
 @import '../styles/base.scss';
 
 
-.button1{
-  font-family: regular;
+.button1 ,
+.button2,
+.button3,
+.button7,
+.button8,
+.button9 {
+  font-family: bold;
+  font-size: 1.4rem;
   border: 0;
   border-radius: 10px;
   color: white;
   padding: 16px;
-  width: 100px;
-  height: 10px;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+}
+.button1{
   background: url(../assets/background/one.jpg);
 }
 .button2{
-  font-family: regular;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  padding: 16px;
-  width: 100px;
-  height: 10px;
+
   background: url(../assets/background/two.jpg);
 }
 .button3{
-  font-family: regular;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  padding: 16px;
-  width: 100px;
-  height: 10px;
+
   background: url(../assets/background/three.jpg);
 }
 .button7{
-  font-family: regular;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  padding: 16px;
-  width: 100px;
-  height: 10px;
+
   background: url(../assets/background/four.jpg);
 }
 .button8{
-  font-family: regular;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  padding: 16px;
-  width: 100px;
-  height: 10px;
+
   background: url(../assets/background/five.jpg);
 }
 .button9{
-  font-family: regular;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  padding: 16px;
-  width: 100px;
-  height: 10px;
+
   background: url(../assets/background/siz.jpg);
 }
 

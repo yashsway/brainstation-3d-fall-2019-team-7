@@ -14,13 +14,11 @@
 .searchicon {
   width: 30px;
   height: 30px;
-  position: relative;
-  left: 330px;
-  bottom: 30px;
 }
 .navlink {
   position: relative;
-  margin-top: 35px;
+  display: flex;
+
 
   @include phone() {
     font-size: $font-size-large;
@@ -53,8 +51,9 @@
   padding-top: 30px;
 }
 
-.navtitle {
+.navlink > .navtitle {
   text-decoration: none;
   color: black;
-  font-family: "Calistoga", cursive;
+  font-family: bold;
+
 }
