@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.scss";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 import Burger from "./component/Burger";
 import Card from "./component/Card";
@@ -8,6 +9,7 @@ import Button from "./component/Button";
 import Tabx from "./component/Tab";
 import Chart from "./component/Chart";
 import Navigation from "./component/navigation/Navigation";
+import Carousel from "./component/carousel/Carousel";
 // npm run start:client
 
 export default class App extends React.Component {
@@ -22,14 +24,21 @@ export default class App extends React.Component {
         </Helmet>
 
         <Navigation />
-        <header className="App-header">
+        <BrowserRouter>
+          <Switch>
+            {/* <Route path="/" exact component="#"/> */}
+            <Route path="/carousel" exact component={Carousel} />
+          </Switch>
+        </BrowserRouter>
+        {/* <header className="App-header">
           <Tabx />
           <h2>Brainstation 3D Starter - Team 5_minute_ramen</h2>
           <Chart />
           <Card />
           <Input />
           <Button />
-        </header>
+        </header> */}
+        
       </div>
     );
   }
