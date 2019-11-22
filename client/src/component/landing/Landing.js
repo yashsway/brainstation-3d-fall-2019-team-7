@@ -21,19 +21,14 @@ export default class Landing extends React.Component {
               </p>
             </div>
           </div>
-
           <div className="landing__right">
-            <img className="landing__img" src={image} alt="" />
+            <Button text="something" class=" bstn button4" />
+            <Button text="something" class=" bstn button5" />
+            <Button text="something" class=" bstn button6" />
           </div>
         </div>
-        <p className="landing__stage">WHAT STAGE ARE YOU AT?</p>
-        <div className="landing__buttonAll">
-            <Button text="STUDENT" class="button4" />
-            <Button text="GRADS" class="button5" />
-            <Button text="PROFESSIONAL" class="button6" />
-        </div>
         <img className="landing__down" src={arrow} alt="scroll down" />
-        
+        <img className="image" src={image} alt="" />
       </seciton>
     );
   }
