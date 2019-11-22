@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import Burger from "./component/Burger";
 import Card from "./component/Card";
@@ -20,7 +20,7 @@ export default class App extends React.Component {
             Add any meta tags you want, or any tag you want to go in the header. 
             You can modify everything else! */}
         <Helmet>
-          <title>Your App Title Here</title>
+          <title>TED GRADS</title>
         </Helmet>
 
         <Navigation />
@@ -28,6 +28,8 @@ export default class App extends React.Component {
           <Switch>
             {/* <Route path="/" exact component="#"/> */}
             <Route path="/carousel" exact component={Carousel} />
+            <Route path="/tag" exact component={Tag} />
+            <Route path="/" exact component={Landing} />
           </Switch>
         </BrowserRouter>
         {/* <header className="App-header">
@@ -38,7 +40,6 @@ export default class App extends React.Component {
           <Input />
           <Button />
         </header> */}
-        
       </div>
     );
   }
