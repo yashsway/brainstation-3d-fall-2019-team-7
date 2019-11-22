@@ -1,0 +1,19 @@
+@import "../../styles/base.scss";
+
+.brandlogo {
+  margin: auto 0;
+  margin-left: 180px;
+
+  @include phone() {
+    margin-left: 65px;
+    margin-top: 16px;
+  }
+
+  @include tablet() {
+    margin-left: auto;
+  }
+}
+
+.logo {
+  display: flex;
+}
