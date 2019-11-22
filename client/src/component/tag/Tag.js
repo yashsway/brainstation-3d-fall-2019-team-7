@@ -1,5 +1,4 @@
 import React from "react";
-import arrow from "../../assets/Icon/chevron-down-solid.svg";
 import Button from "../Button";
 import "./tag.scss";
 
