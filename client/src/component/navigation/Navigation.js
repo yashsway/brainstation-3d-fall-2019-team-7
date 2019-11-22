@@ -8,6 +8,10 @@ import CollapseMenu from "./CollapseMenu";
 import "./Navigation.scss";
 import Search from "./Search";
 
+import Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+// https://scotch.io/tutorials/implementing-smooth-scrolling-in-react
+
 const Navigation = props => {
   const barAnimation = useSpring({
     from: { transform: "translate3d(0, -10rem, 0)" },
@@ -26,25 +30,29 @@ const Navigation = props => {
       <NavBar style={barAnimation}>
         <div className="nav-container">
           <Brand />
-          <Search />
           <NavLinks className="navlink" style={linkAnimation}>
-            <a href="/inventory" className="current">
-              Inventory
-            </a>
-            <a href="/warehouses">Locations</a>
+            <Link
+              activeClass="active"
+              to="id" // the element???
+              spy={true} // make Link selected when scroll is at its targets position
+              smooth={true}
+              offset={-70} // scroll additional px (like padding)
+              duration= {500} //  time of the scroll animation, can be a number or a function 
+            />
+            <a href="/carousel">Recommended</a>
           </NavLinks>
-          <div>
+          {/* <div>
             <BurgerMenu
               navbarState={props.navbarState}
               handleNavbar={props.handleNavbar}
             />
-          </div>
+          </div> */}
         </div>
       </NavBar>
-      <CollapseMenu
+      {/* <CollapseMenu
         navbarState={props.navbarState}
         handleNavbar={props.handleNavbar}
-      />
+      /> */}
     </>
   );
 };
