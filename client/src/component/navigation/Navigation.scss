@@ -7,10 +7,20 @@
   padding: 0 2rem;
   justify-content: space-between;
   height: 80px;
+  background-color: white;
+  border-bottom: 0.5px solid black;
 }
 
+.searchicon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 330px;
+  bottom: 30px;
+}
 .navlink {
   position: relative;
+  margin-top: 35px;
 
   @include phone() {
     font-size: $font-size-large;
@@ -40,5 +50,10 @@
 
 .navlink a:hover::after {
   border-bottom: 1px solid white;
-  padding-top: 20px;
+  padding-top: 30px;
+}
+
+.navtitle {
+  color: black;
+  font-family: "Calistoga", cursive;
 }

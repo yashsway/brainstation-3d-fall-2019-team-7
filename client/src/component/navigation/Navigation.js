@@ -5,6 +5,7 @@ import { useSpring, animated, config } from "react-spring";
 import Brand from "./Brand";
 import BurgerMenu from "./BurgerMenu";
 import CollapseMenu from "./CollapseMenu";
+import icon from "../../assets/Logo/search.png";
 import "./Navigation.scss";
 import Search from "./Search";
 
@@ -26,12 +27,24 @@ const Navigation = props => {
       <NavBar style={barAnimation}>
         <div className="nav-container">
           <Brand />
-          <Search />
+          {/* <Search /> */}
           <NavLinks className="navlink" style={linkAnimation}>
-            <a href="/inventory" className="current">
-              Inventory
+            <a>
+              <span className="navtitle">WATCH</span>
             </a>
-            <a href="/warehouses">Locations</a>
+            <a>
+              <span className="navtitle">DISCOVER</span>
+            </a>
+            <a>
+              <span className="navtitle">ATTEND</span>
+            </a>
+            <a>
+              <span className="navtitle">PARTICIPATE</span>
+            </a>
+            <a>
+              <span className="navtitle">ABOUT</span>
+            </a>
+            <img className="searchicon" src={icon} alt="" />
           </NavLinks>
           <div>
             <BurgerMenu

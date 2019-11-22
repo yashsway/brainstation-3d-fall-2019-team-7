@@ -2,7 +2,8 @@
 
 .brandlogo {
   margin: auto 0;
-  margin-left: 180px;
+  margin-left: 90px;
+  margin-top: 20px;
 
   @include phone() {
     margin-left: 65px;
