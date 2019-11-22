@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.scss';
 import { Helmet } from 'react-helmet';
+import Burger from './component/Burger';
+import Card from './component/Card';
+import Input from './component/Input';
+import Button from './component/Button';
+import Tabx from './component/Tab';
 
 export default class App extends React.Component {
   render() {
@@ -13,8 +18,13 @@ export default class App extends React.Component {
         <Helmet>
           <title>Your App Title Here</title>
         </Helmet>
+        <Burger /> 
         <header className="App-header">
-          <h2>Brainstation 3D Starter - Kingsley and Kelly are awesomesauce </h2>
+        <Tabx /> 
+          <h2>Brainstation 3D Starter - Team 5_minute_ramen</h2>
+          <Card />
+          <Input />
+          <Button />
         </header>
       </div>
     );

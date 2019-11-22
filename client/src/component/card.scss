@@ -1,0 +1,12 @@
+@import '../styles/utils/base.scss';
+
+.card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  &__title {
+    margin-bottom: 10px;
+  }
+}
