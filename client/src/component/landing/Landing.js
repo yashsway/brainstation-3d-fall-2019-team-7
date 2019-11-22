@@ -1,5 +1,6 @@
 import React from "react";
 import arrow from "../../assets/Icon/chevron-down-solid.svg";
+// "../../assets/Icon/chevron-down-solid.svg"
 import "./landing.scss";
 import Button from "../Button";
 import image from "../../assets/Logo/image.png";
